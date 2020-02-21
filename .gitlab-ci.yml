@@ -1,0 +1,24 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  only:
+    - master
+  script: 
+    - g++ -c test.cpp
+    - g++ -o test test.o
+  artifacts:
+    paths:
+      - test
+  # depending on your build setup it's most likely a good idea to cache outputs to reduce the build time
+  cache:
+    paths:
+      - "*.o"
+
+# run tests using the binary built before
+test:
+  stage: test
+  script:
+    - ./test
