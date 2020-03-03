@@ -22,7 +22,7 @@ test:
   stage: test
   script:
     - ./test
-    - curl --header 'Content-Type: application/json' --header "PRIVATE-TOKEN: gDybLx3yrUK_HLp3qPjS" \
-     --data '{ "name": "New release", "tag_name": "v1.2", "description": "Super nice release", "milestones": ["v1.2", "v1.2-rc"], "assets": { "links": [{ "name": "hoge", "url": "https://google.com" }] } }' \
+    - curl --header 'Content-Type: application/json' --header "PRIVATE-TOKEN: gDybLx3yrUK_HLp3qPjS" >
+     --data '{ "name": "New release", "tag_name": "v1.2", "description": "Super nice release", "milestones": ["v1.2", "v1.2-rc"], "assets": { "links": [{ "name": "hoge", "url": "https://google.com" }] } }' >
      --request POST https://git.tsintergy.com:8070/api/v4/projects/gitlabcitest/releases
 
