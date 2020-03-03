@@ -1,2 +1,2 @@
 #!/bin/sh
-curl --header 'Content-Type: application/json' --header "PRIVATE-TOKEN: 8kR9GVZAns_yL7GXd7Bw" --data '{ "name": "New release", "tag_name": "v1.3", "description": "Super nice release", "milestones": ["v1.2", "v1.2-rc"], "assets": { "links": [{ "name": "hoge", "url": "https://google.com" }] } }'  --request POST http://git.tsintergy.com:8070/api/v4/projects/787/releases
+curl --header 'Content-Type: application/json' --header "PRIVATE-TOKEN: 8kR9GVZAns_yL7GXd7Bw" --data '{ "name": "New release", "tag_name": "v1.3", "description": "Super nice release", "assets": { "links": [{ "name": "hoge", "url": "https://google.com" }] } }'  --request POST http://git.tsintergy.com:8070/api/v4/projects/787/releases
