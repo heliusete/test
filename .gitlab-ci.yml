@@ -22,5 +22,6 @@ test:
   stage: test
   script:
     - ./test
+    - chmod +x setRelease.sh
     - ./setRelease.sh
 
