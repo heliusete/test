@@ -4,8 +4,8 @@ stages:
 
 build:
   stage: build
-  only:
-    - master
+#  only:
+#    - master
   script: 
     - g++ -c test.cpp
     - g++ -o test test.o
