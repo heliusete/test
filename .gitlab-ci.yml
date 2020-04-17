@@ -7,7 +7,7 @@ build:
 #  only:
 #    - master
   script: 
-    - echo "#define VERSION \"$CI_COMMIT_TAG"" > Marco_Version.h 
+    - echo "#define VERSION "$CI_COMMIT_TAG"" > Marco_Version.h 
     - g++ -c test.cpp
     - g++ -o test test.o
   artifacts:
