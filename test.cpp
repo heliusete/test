@@ -8,5 +8,6 @@ using namespace std;
 int main(int argc,char *argv[])
 {
 	printf("GitLab CI Test Release Succeeded!\n");
+    printf("%s", VERSION);
 	return 0;
 }
